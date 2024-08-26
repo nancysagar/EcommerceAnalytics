@@ -1,0 +1,47 @@
+/* Tailwind CSS Custom Styles */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* General styling */
+body {
+  @apply bg-gray-900 text-white font-sans;
+}
+
+/* App container */
+.App {
+  @apply text-center p-6;
+}
+
+/* Header */
+h1 {
+  @apply text-3xl font-bold text-white mb-8;
+}
+
+/* Chart container */
+.chart-container {
+  @apply mx-auto my-8 p-6 max-w-3xl bg-gray-800 shadow-lg rounded-lg;
+}
+
+/* Chart title */
+.chart-container h2 {
+  @apply text-xl font-semibold text-gray-300 mb-4;
+}
+
+/* Dropdown styling */
+select {
+  @apply px-4 py-2 mb-6 border border-gray-600 bg-gray-700 rounded-lg text-base text-white;
+}
+
+/* Loading state */
+.loading {
+  @apply text-gray-400 text-lg;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .chart-container {
+    @apply w-11/12;
+  }
+}
